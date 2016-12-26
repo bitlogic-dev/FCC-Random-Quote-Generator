@@ -1,0 +1,34 @@
+h2 {
+  color: #D15656;
+
+}
+#main {
+  background-color: #CCE5E5;
+  height: 100%;
+  padding: 50px;
+}
+.quote-wrap {
+  width: 600px;
+  height: 400px;
+  background-color: #7ECDD2;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+#randomQuote {
+  color: #ffffff;
+  background-color: #d15656;
+}
+.quoteContent {
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #CCE5E5;
+  color: #000000;
+  font-family: PT sans;
+  font-size: 18px;
+}
+#testBox {
+  height: 400px;
+  width: 500px;
+}
