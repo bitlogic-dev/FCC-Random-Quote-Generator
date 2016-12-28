@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link href='css/style.css' rel='stylesheet' />
+    <meta charset='UTF-8'>
     <script src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
+    <link href='css/style.css' rel='stylesheet' />
     <script src='js/app.js'></script>
-    <title>Title of the document</title>
+    <title>Random Quote Generator</title>
   </head>
 
   <body>
-    <div id="main">
-      <div class="quote-wrap">
-        <h2>Random Quote Generator</h2>
-        <div class="quoteContent"><div id="quoteBox"></div></div>
-        <button class="btn btn-block" id="randomQuote">New Quote</button>
-        <div id="twtterContainer"></div>
+    <div class='quote-wrap'>
+      <h2>Random Quote Generator</h2>
+      <div id='twtterContainer' class='social-media-btn'></div>
+      <div class='quoteContent'>
+        <div id='quoteBox'></div>
       </div>
+      <div id='randomQuote' class='btn'>New Quote</div>
     </div>
   </body>
 </html>
