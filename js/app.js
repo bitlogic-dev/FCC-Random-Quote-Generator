@@ -5,7 +5,7 @@ $(document).ready(function() {
     var html = '';
     html += '<p>' + quote.content + '</p><br>';
     html += '<p>- ' + quote.title + '</p>';
-    $("#quoteBox").html(html);
+    $('#quoteBox').html(html);
       var twtterContainer = $('<a></a>')
     .addClass('twitter-share-button')
     .attr('href', 'https://twitter.com/share')
