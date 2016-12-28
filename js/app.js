@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  $.ajaxSetup({
+    cache: false
+  });
   //load initial quote and build tweet button
   $.getJSON('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1', function(json) {
     var quote = json.shift();
