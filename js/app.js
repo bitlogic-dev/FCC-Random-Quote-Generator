@@ -1,6 +1,6 @@
 $(document).ready(function() {
   //load initial quote and build tweet button
-  $.getJSON('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1', function(json) {
+  $.getJSON('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1', function(json) {
     var quote = json.shift();
     var html = '';
     html += '<p>' + quote.content + '</p><br>';
@@ -8,7 +8,7 @@ $(document).ready(function() {
     $("#quoteBox").html(html);
       var twtterContainer = $('<a></a>')
     .addClass('twitter-share-button')
-    .attr('href', 'http://twitter.com/share')
+    .attr('href', 'https://twitter.com/share')
     .attr('data-size', 'large')
     .attr('data-url', ' ')
     .attr('data-text', $('#quoteBox').text());
@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
   //reload quote and tweet button when new quote is clicked
   $('#randomQuote').on('click', function() {
-    $.getJSON('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1', function(json) {
+    $.getJSON('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1', function(json) {
       var quote = json.shift();
       var html = '';
       html += '<p>' + quote.content + '</p><br>';
@@ -27,7 +27,7 @@ $(document).ready(function() {
       $('#twtterContainer iframe').remove();
       var twtterContainer = $('<a></a>')
         .addClass('twitter-share-button')
-        .attr('href', 'http://twitter.com/share')
+        .attr('href', 'https://twitter.com/share')
         .attr('data-size', 'large')
         .attr('data-url', ' ')
         .attr('data-text', $('#quoteBox').text());
